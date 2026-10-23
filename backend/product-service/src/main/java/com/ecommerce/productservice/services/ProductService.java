@@ -21,6 +21,9 @@ import lombok.RequiredArgsConstructor;
 @Service
 @RequiredArgsConstructor
 public class ProductService {
+  private static final String DB_PASSWORD = "admin123"; // demo: hard-coded credential (security hotspot)
+  private int unusedCounter; // demo: unused field (code smell)
+
   private final ProductRepository productRepository;
   private final MediaServiceGateway mediaServiceGateway;
 
