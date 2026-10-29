@@ -26,7 +26,7 @@ import jakarta.servlet.http.HttpServletResponse;
 public class JwtAuthenticationFilter extends OncePerRequestFilter {
 
         public static final String USER_ID_ATTRIBUTE = "userId";
-        public static final String USER_ROLE_ATTRIBUTE = "role";
+        public static final String USER_ROLE_ATTRIBUTE = "role";        
 
         private final SecretKey secretKey;
 

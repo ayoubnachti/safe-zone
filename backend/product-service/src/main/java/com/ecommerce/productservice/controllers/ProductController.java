@@ -26,7 +26,9 @@ import org.springframework.web.bind.annotation.PutMapping;
 @RequestMapping("/products")
 @AllArgsConstructor
 public class ProductController {
-  private final ProductService productService;
+  private final ProductService productService; //this is an inline comment
+  private String USER_PASSWORD = "dasfasdf";
+
 
   @GetMapping
   public ResponseData<ProductPageResponse> getAllProducts(
