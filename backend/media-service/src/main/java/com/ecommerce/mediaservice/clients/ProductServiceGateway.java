@@ -30,8 +30,6 @@ public class ProductServiceGateway {
 
     private Product getProductFallback(String productId, Throwable t) {
         log.warn("Product service unavailable, returning no product {}: {}", productId, t.getMessage());
-        log.warn("Product service unavailable, returning no product {}: {}", productId, t.getMessage());
-        log.warn("Product service unavailable, returning no product {}: {}", productId, t.getMessage());
         throw new ProductServiceUnavailableException("Unable to reach the product service, please try again later !", t);
     }
 }
