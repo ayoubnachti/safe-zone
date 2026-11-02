@@ -22,8 +22,7 @@ import lombok.RequiredArgsConstructor;
 @RequiredArgsConstructor
 public class ProductService {
   private final ProductRepository productRepository;
-  private final MediaServiceGateway mediaServiceGateway; // this is an inline comment
-  private static final String USER_PASSWORD = "adsfasfd";
+  private final MediaServiceGateway mediaServiceGateway;
 
   private static final int DEFAULT_LIMIT = 20;
   private static final int MAX_LIMIT = 100;
